@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="shortcut icon" href="favicon_io/android-chrome-512x512.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+           # = id
+           . = class
+           : = pseudo-class
+           :: = pseudo-element
+           > = children
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: rgb(0, 255, 0);
+        }
+
+        a:after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(83, 83, 83);
+        }
+
+        .especial {
+            background-color: rgb(247, 189, 255);
+        }
+
+        .especial::before {
+            content: '☾ ';
+        }
+
+        .especial::after {
+            content: ' ☽';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <hr>
+    <ul>
+        <li><a href="https://github.com/UlyssesAugusto" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/?hl=pt-br" class="especial">YouTube</a></li>
+        <li><a href="https://www.google.com/webhp?hl=pt-BR&ictx=2&sa=X&ved=0ahUKEwjt-puKxb37AhV0TTABHVYHCTYQPQgJ">Google</a></li>       
+    </ul>
+</body>
+</html>

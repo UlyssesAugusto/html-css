@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="shortcut icon" href="favicon_io/android-chrome-192x192.png" type="image/x-icon">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <hr>
+    <br>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/PEQUENA.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="Imagens/MEDIA.png" type="image/png">
+        <img src="Imagens/GRANDE.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Tell Me Why.mp3" controls autoplay></audio>
+    <h1>Outros formatos de áudio</h1>
+    <audio preload="none" autoplay controls loop>
+        <source src="midia/Somewhere i Belong.mp3" type="audio/mpeg">
+        <source src="midia/Somewhere i Belong.ogg" type="audio/ogg">
+        <source src="midia/Somewhere i Belong.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Somewhere i Belong.mp3"> Clique aqui para baixar o arquivo!</a></p>
+    </audio>    
+</body>
+</html>
