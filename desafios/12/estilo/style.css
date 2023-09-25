@@ -17,7 +17,7 @@
 }
 
 html, body {
-    min-width: 100vh;
+    min-height: 100vh;
     background-color: darkgray;
     font-family: var(--fonte1);
 }
@@ -28,7 +28,7 @@ header {
     text-align: center;
 }
 
-header > h1 {
+header h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte3);
@@ -70,7 +70,7 @@ section.normal {
 section.imagem {
     background-color: rgb(56, 56, 56);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.568);
     background-attachment: fixed;
 }
 
@@ -78,6 +78,7 @@ section.imagem > p {
     background-color: rgba(0, 0, 0, 0.521);
     display: inline-block;
     padding: 10px;
+    border-radius: 3px;
     text-shadow: 2px 2px 0px black;
 }
 
